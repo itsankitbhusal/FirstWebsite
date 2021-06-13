@@ -369,8 +369,11 @@ hr {
     text-align: center;
 }
 
-.copyright span {
+.copyright a {
     color: var(--green);
+    font-weight: 700;
+    list-style-type: none;
+    text-decoration: none;
     cursor: pointer;
 }
 
