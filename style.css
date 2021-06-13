@@ -1,0 +1,646 @@
+:root {
+    --black: #1E1E1E;
+    --white: #FFFFFF;
+    --green: #2AAC62;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: montserrat, poppins, sans-serif;
+}
+
+nav {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    box-shadow: 0 0 20px gray;
+}
+
+.nav-links {
+    float: left;
+}
+
+.nav-links ul {
+    list-style-type: none;
+    color: var(--black);
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: var(--black);
+    padding: 20px;
+    font-weight: 500;
+}
+
+.nav-links ul li a:hover {
+    color: white;
+    background-color: var(--green);
+    transition: .2s;
+}
+
+.nav-icons ul li a:hover {
+    color: white;
+    background-color: var(--green);
+    transition: .2s;
+}
+
+.nav-links ul li {
+    display: inline;
+}
+
+.nav-icons {
+    float: right;
+}
+
+.nav-icons ul {
+    list-style-type: none;
+    color: var(--black);
+}
+
+.nav-icons ul li a {
+    text-decoration: none;
+    color: var(--black);
+    padding: 20px;
+}
+
+.nav-icons ul li {
+    display: inline;
+}
+
+.container {
+    display: flex;
+    margin: 10% 10%;
+    align-items: center;
+}
+
+.head {
+    text-align: left;
+    font-size: 40px;
+}
+
+.des {
+    margin-top: 3%;
+    text-align: left;
+    color: gray;
+    width: 75%;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.des2 {
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: gray;
+    width: 75%;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.btn {
+    margin-top: 10%;
+    padding: 25px 80px;
+    background-color: none;
+    font-weight: 600;
+    border: 1.5px solid var(--green);
+    display: inline-block;
+    border-radius: 999px;
+    color: var(--black);
+}
+
+.btn:hover {
+    background-color: var(--green);
+    cursor: pointer;
+    color: var(--white);
+    transition: .2s;
+}
+
+.img1 {
+    width: 80%;
+}
+
+
+.heading {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(70, 70, 70);
+}
+
+.heading span {
+    color: #44813E;
+}
+
+.product-warper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    padding-bottom: 5%;
+    justify-content: center;
+    align-items: center;
+    column-count: 3;
+}
+
+
+.product-container {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-listing {
+    display: flex;
+    flex-wrap: wrap;
+    width: 33%;
+}
+
+.product-single {
+    display: block;
+    text-align: center;
+    border-radius: 16px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 20px rgb(209, 209, 209);
+    padding: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 15%;
+}
+
+.product-single:hover {
+    box-shadow: 0 0 20px rgb(116, 114, 114);
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+.product-discount {
+    background-color: var(--green);
+    float: left;
+    padding: 15px;
+    font-weight: 700;
+    position: absolute;
+    border-radius: 6px;
+    color: white;
+}
+
+.product-img {
+    width: auto;
+    width: 200px;
+    padding: 10px;
+}
+
+.product-name {
+    font-weight: 700;
+    padding: 5%;
+    display: inline-flex;
+    color: rgb(70, 70, 70);
+    font-size: 20px;
+}
+
+.product-price {
+    color: rgb(70, 70, 70);
+    font-size: 14px;
+    margin-bottom: 5%;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.product-price span {
+    text-decoration: line-through;
+    color: grey;
+    font-weight: 400;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.product-quantity {
+    color: rgb(70, 70, 70);
+    font-weight: 500;
+
+}
+
+.product-quantity span input {
+    width: 20%;
+    font-weight: 700;
+    border: 1px solid var(--green);
+    padding: 5px;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+}
+
+.product-add-to-cart {
+    margin-top: 8%;
+    background-color: var(--green);
+    padding: 24px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.product-add-to-cart a {
+    text-decoration: none;
+    color: white;
+}
+
+.product-add-to-cart:hover {
+    background-color: #44813E;
+}
+
+.end {
+    padding-top: 5%;
+    width: 75%;
+    color: gray;
+    margin-bottom: 50px;
+}
+
+h3 {
+    text-transform: uppercase;
+    color: #44813E;
+    margin-bottom: 8px;
+}
+
+/* Footer Starts */
+.footer-wraper {
+
+    box-shadow: 0 0 16px grey;
+}
+
+.footer {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.green {
+    color: var(--green);
+}
+
+.foot-des {
+    margin-top: 10px;
+    color: gray;
+    font-size: 14px;
+}
+
+.groco {
+    font-size: 24px;
+}
+
+.about {
+    flex-direction: column;
+    width: 20%;
+}
+
+.about p {
+    display: flex;
+    justify-content: center;
+
+}
+
+.icons {
+    font-size: 10px;
+    margin-top: 10px;
+    color: white;
+    width: 25px;
+    text-align: center;
+    background-color: var(--green);
+    padding: 8px;
+    cursor: pointer;
+}
+
+.icons:hover {
+    background-color: white;
+    color: var(--green);
+    transform: scale(1.5);
+    transition: .2s;
+}
+
+.location {
+    flex-direction: column;
+    width: 20%;
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+.location a,
+.links a,
+.download a {
+    margin-top: 10px;
+    text-decoration: none;
+    color: gray;
+}
+
+.location a:hover,
+.links a:hover,
+.download a:hover {
+    color: var(--green);
+    transition: .2s;
+}
+
+.links {
+    flex-direction: column;
+    width: 20%;
+}
+
+.download {
+    flex-direction: column;
+    width: 20%;
+}
+
+hr {
+    margin-top: 20px;
+    color: gray;
+}
+
+.copyright {
+    font-weight: 500;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.copyright span {
+    color: var(--green);
+    cursor: pointer;
+}
+
+.test {
+    margin-left: 10px;
+}
+
+/* Footer Starts End */
+
+/* Responsive Design */
+
+@media screen and (max-width:768px) {
+    .nav-links ul li a {
+        display: block;
+    }
+
+    .nav-icons ul li a {
+        display: block;
+    }
+
+    nav {
+        padding-bottom: 300px;
+        box-shadow: 0 0 20px gray;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .typo {
+        margin-top: 0px;
+        width: 100%;
+        transition: .5s;
+        order: 2;
+    }
+
+    .image {
+        order: 1;
+    }
+
+    .head {
+        text-align: center;
+        font-size: 24px;
+        transition: .5s;
+    }
+
+    .des {
+        padding: 5%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 14px;
+        transition: .5s;
+
+    }
+
+    .btn {
+        clear: both;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 0%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        transition: .5s;
+        font-size: 10px;
+    }
+
+    .items {
+        margin-top: 15%;
+    }
+
+    .img1 {
+        margin-top: 0px;
+        width: 100%;
+        transition: .5s;
+        transform: scale(0.7);
+
+    }
+
+    .heading {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .des p {
+        font-size: 10px;
+        text-align: center;
+        width: 75%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .img img {
+        width: 100%;
+    }
+
+    .product-warper {
+        column-count: 2;
+    }
+
+    .product-listing {
+        width: 50%;
+        flex-wrap: wrap;
+        column-count: 2;
+    }
+
+    .end {
+        font-size: 10px;
+    }
+
+    .end h3 {
+        font-size: 14px;
+    }
+
+    .footer {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .foot-des {
+        font-size: 10px;
+    }
+
+    .about {
+        padding-top: 20px;
+        width: 40%;
+    }
+
+    .location {
+        padding-top: 20px;
+        width: 40%;
+        margin: 20px;
+    }
+
+    .location a {
+        font-size: 10px;
+    }
+
+    .links {
+        width: 40%;
+        margin: 20px;
+        margin-top: 60px;
+    }
+
+    .links a {
+        font-size: 10px;
+    }
+
+    .download {
+        width: 40%;
+        margin: 20px;
+    }
+
+    .download a {
+        font-size: 10px;
+    }
+
+    .copyright {
+        font-size: 12px;
+        text-align: center;
+    }
+
+}
+
+
+@media screen and (max-width:380px) {
+    .btn {
+        padding: 5% 15%;
+        margin-top: 5%;
+        font-size: 12px;
+        transition: .5s;
+    }
+
+    .product-warper {
+        column-count: 1;
+    }
+
+    .product-listing {
+        width: 100%;
+        flex-wrap: wrap;
+        column-count: 2;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .5s;
+        text-align: center;
+    }
+
+    .end {
+        font-size: 8px;
+
+    }
+
+    .heading {
+        font-size: 16px;
+    }
+
+    .des {
+        clear: both;
+    }
+
+    .des p {
+        font-size: 8px;
+        text-align: center;
+    }
+
+    .end h3 {
+        font-size: 10px;
+    }
+
+    .groco {
+        font-size: 16px;
+    }
+
+    .foot-des {
+        font-size: 8px;
+        width: 100%;
+        transition: .5s;
+    }
+
+    .about {
+        width: 60%;
+        margin: 20px;
+        transition: .5s;
+    }
+
+    .location {
+        font-size: 12px;
+        width: 100%;
+        margin: 20px;
+        transition: .5s;
+    }
+
+    .location a {
+        font-size: 8px;
+    }
+
+    .links {
+        font-size: 12px;
+        width: 100%;
+        margin: 20px;
+        transition: .5s;
+    }
+
+    .links a {
+        font-size: 8px;
+    }
+
+    .download {
+        font-size: 12px;
+        width: 100%;
+        margin: 20px;
+        transition: .5s;
+    }
+
+    .download a {
+        font-size: 8px;
+    }
+
+    .copyright {
+        font-size: 10px;
+        text-align: center;
+    }
+
+}
